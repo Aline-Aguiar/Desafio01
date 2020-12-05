@@ -3,7 +3,7 @@ package br.com.aline.desafio01
 class Curso(var nomeCurso: String,
             val codigoCurso: Int,
             var qtdMaxAlunos: Int
-) {
+            ) {
 
     lateinit var professorTitular: ProfessorTitular
     lateinit var professorAdjunto: ProfessorAdjunto
@@ -37,20 +37,18 @@ class Curso(var nomeCurso: String,
         if (validacaoCodigo(umAluno) && this.matriculados.size < this.qtdMaxAlunos) {
             matriculados.add(umAluno)
             return true
-        } else {
-            if (!validacaoCodigo(umAluno)) println("Já existe um aluno com o código ${umAluno.codigoAluno}. " +
+        } else{
+            if(!validacaoCodigo(umAluno)) println("Já existe um aluno com este código. " +
                     "Favor, tentar novamente com um código diferente.")
-            else
-                println("Não há vagas disponíveis para este curso.")
             return false
         }
     }
 
-    fun excluirAluno(umAluno: Aluno) {
-        val contem = matriculados.contains(umAluno)
-        if (contem) {
+    fun excluirAluno(umAluno: Aluno){
+        val contem =matriculados.contains(umAluno)
+        if(contem){
             matriculados.remove(umAluno)
-        } else {
+        }else{
             println("Aluno ${umAluno.nome} ${umAluno.sobrenome} não está matrículado neste curso")
         }
     }
