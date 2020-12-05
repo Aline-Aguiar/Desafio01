@@ -24,7 +24,7 @@ abstract class Professor(var nomeProfessor: String,
         return "Professor(nomeProfessor='$nomeProfessor', " +
                 "sobrenome='$sobrenomeP', " +
                 "tempoDeCasa=$tempoDeCasa, " +
-                "codigoProfessor=$codigoProfessor)"
+                "codigoProfessor=$codigoProfessor,"
     }
 
 }

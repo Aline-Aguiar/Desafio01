@@ -7,6 +7,6 @@ class ProfessorAdjunto(nomeProfessor: String,
                        var horasMonitoria: Int): Professor (nomeProfessor,sobrenomeP,tempoDeCasa,codigoProfessor) {
 
     override fun toString(): String {
-        return "ProfessorAdjunto(horasMonitoria=$horasMonitoria)"
+        return "Adjunto ${super.toString()} horasMonitoria=$horasMonitoria)"
     }
 }
