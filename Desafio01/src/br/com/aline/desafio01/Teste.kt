@@ -28,11 +28,24 @@ fun main(){
 
     val dig = DigitalHouseManager()
 
-    dig.registrarProfessorAdjunto("Carlos","Batista",52,2)
-    dig.registrarProfessorAdjunto("Priscila","Bianco",35,5)
-    dig.registrarProfessorAdjunto("Bruna","Farias",52,1)
+    dig.registrarAluno("Marcos","Paulo",11)
+    dig.registrarAluno("Maria","Pilar",19)
+    dig.registrarAluno("Maité","Ribeiro",19)
+    dig.registrarAluno("Bianca","Barros",23)
 
-    println("${dig.listaProfessores}")
+    println("${dig.listaAlunos}")
+//    dig.registrarProfessorAdjunto("Carlos","Batista",52,2)
+//    dig.registrarProfessorAdjunto("Priscila","Bianco",35,5)
+//    dig.registrarProfessorAdjunto("Bruna","Farias",52,1)
+//    dig.registrarProfessorTitular("Micael","Phillips",16,"Geografia")
+//
+//    println("${dig.listaProfessores}")
+//    dig.excluirProfessor(35)
+//    println()
+//    println("${dig.listaProfessores}")
+//    dig.excluirProfessor(17)
+//    println()
+//    println("${dig.listaProfessores}")
 
 
 //    dig.registrarCurso("Biologia",12,10)
